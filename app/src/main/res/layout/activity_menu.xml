@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".MainActivity">
-
+    tools:context=".menu"
+    android:background="@color/black">
     <LinearLayout
-        android:id="@+id/linearLayout2"
         android:layout_width="393dp"
         android:layout_height="83dp"
         android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228">
 
         <TextView
             android:id="@+id/textView3"
@@ -38,61 +37,65 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/comm"
-        android:layout_width="wrap_content"
+        android:id="@+id/sl12"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="356dp"
+        android:layout_marginTop="250dp"
         android:fontFamily="monospace"
-        android:text="Commander/pilot"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/miss"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:fontFamily="monospace"
-        android:text="Mission specialist"
+        android:gravity="center_horizontal"
+        android:text="Sleep"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/comm" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/non"
-        android:layout_width="wrap_content"
+        android:id="@+id/di12"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="monospace"
-        android:text="Non space crew"
+        android:gravity="center"
+        android:text="Diet"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/miss" />
+        app:layout_constraintTop_toBottomOf="@+id/sl12" />
 
     <TextView
-        android:id="@+id/log"
-        android:layout_width="wrap_content"
+        android:id="@+id/ex12"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="48dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="monospace"
-        android:text="Select User"
-        android:textColor="#CB8383"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/comm"
+        android:gravity="center"
+        android:text="Exercise"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.672" />
+        app:layout_constraintTop_toBottomOf="@+id/di12" />
+
+    <TextView
+        android:id="@+id/hs12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Health Scores"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ex12" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -104,6 +107,5 @@
         android:textColor="#616971"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

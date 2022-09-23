@@ -23,14 +23,14 @@ TextView comm,non,miss;
  comm.setOnClickListener(new View.OnClickListener() {
      @Override
      public void onClick(View view) {
-//         startActivity(new Intent(MainActivity.this,menu.class));
+         startActivity(new Intent(MainActivity.this,menu.class));
          Toast.makeText(MainActivity.this, "Welcome Commander!!", Toast.LENGTH_SHORT).show();
      }
  });
     non.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this,menu.class));
+                startActivity(new Intent(MainActivity.this,menu.class));
                 Toast.makeText(MainActivity.this, "Welcome Scientist!!", Toast.LENGTH_SHORT).show();
 
             }
@@ -38,7 +38,7 @@ TextView comm,non,miss;
     miss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this,menu.class));
+                startActivity(new Intent(MainActivity.this,menu.class));
                 Toast.makeText(MainActivity.this, "Welcome Astronaut!!", Toast.LENGTH_SHORT).show();
 
             }
