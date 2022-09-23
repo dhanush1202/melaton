@@ -40,10 +40,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
+                android:fontFamily="monospace"
                 android:gravity="center_horizontal"
                 android:shadowColor="#FFFFFF"
                 android:text="2 hours"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -64,10 +66,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
+                android:fontFamily="monospace"
                 android:gravity="center_horizontal"
                 android:shadowColor="#FFFFFF"
                 android:text="no of days"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,37 +92,41 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_weight="1"
+                android:fontFamily="monospace"
                 android:gravity="center_horizontal"
                 android:text="456 kcal"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
         </LinearLayout>
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/week"
-        android:layout_width="227dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="112dp"
+        android:layout_width="356dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="68dp"
+        android:fontFamily="monospace"
         android:foregroundGravity="center"
         android:gravity="center_horizontal"
-        android:text="@string/w"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:text="Get Weekly Summary"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="365dp"
+        android:layout_width="410dp"
+        android:layout_height="335dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.557">
 
         <LinearLayout
             android:id="@+id/linearLayout4"
@@ -158,6 +166,7 @@
                 android:layout_width="140sp"
                 android:layout_height="110sp"
                 android:layout_gravity="center_horizontal|left"
+                android:fontFamily="monospace"
                 android:gravity="center_horizontal|left"
                 android:text="plank                                      time: 1min                     reps:4                            "
                 android:textColor="#FFFFFF"
@@ -167,6 +176,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="110sp"
+                android:fontFamily="monospace"
                 android:text="treadmill                                         time: 30mins                                          reps: 2"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
@@ -175,6 +185,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="110sp"
+                android:fontFamily="monospace"
                 android:text="Ergometer                                                    time: 25min              reps: 2"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
@@ -187,7 +198,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
-        android:text="sleep"
         android:textColor="#2196F3"
         app:layout_constraintBottom_toTopOf="@+id/diet1"
         app:layout_constraintStart_toStartOf="@+id/diet1"
@@ -199,7 +209,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="19dp"
-        android:text="diet"
         android:textColor="#2196F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

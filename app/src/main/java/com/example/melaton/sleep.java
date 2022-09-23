@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class sleep extends AppCompatActivity {
     TextView num,health;
-    int n=25;
+    public static int n=25;
     ImageView minus,plus;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +24,15 @@ public class sleep extends AppCompatActivity {
         minus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                n=n-1;
-                num.setText(n);
+                n=n+1;
+                num.setText(String.valueOf(n));
             }
         });
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                n+=1;
-                num.setText(n);
+                n-=1;
+                num.setText(String.valueOf(n));
             }
         });
         health.setOnClickListener(new View.OnClickListener() {
