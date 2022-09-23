@@ -8,71 +8,90 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="89dp"
-        android:orientation="horizontal">
+        android:id="@+id/linearLayout2"
+        android:layout_width="393dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="295dp"
-            android:layout_height="match_parent"
+            android:layout_width="371dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:gravity="center"
-            android:text="MELATON"
-            android:textAlignment="center"
-            android:textColor="#797E9E"
+            android:fontFamily="monospace"
+            android:text="Melaton"
+            android:textColor="#616971"
             android:textSize="48sp"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            tools:srcCompat="@drawable/logo" />
-
+            app:srcCompat="@drawable/logo" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="144dp"
-        android:layout_height="73dp"
-        android:background="#9E6767"
-        android:text="Mission specialist"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.422"
-        app:strokeColor="#4F1616" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="139dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="176dp"
-        android:text="non-space crew"
+    <TextView
+        android:id="@+id/comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="356dp"
+        android:fontFamily="monospace"
+        android:text="Commander/pilot"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="144dp"
-        android:layout_height="69dp"
-        android:background="#A962C7"
-        android:backgroundTint="#FFA000"
-        android:text="pilot/commander"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/miss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="monospace"
+        android:text="Mission specialist"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comm" />
+
+    <TextView
+        android:id="@+id/non"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="monospace"
+        android:text="Non space crew"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miss" />
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="monospace"
+        android:text="Select User"
+        android:textColor="#CB8383"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/comm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
-        app:strokeColor="#FFA000" />
+        app:layout_constraintVertical_bias="0.672" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
