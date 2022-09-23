@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">melaton</string>
+    <string name="w">Weekly summary</string>
+    <string name="ff">Monthly summary</string>
+    <string name="f">TODO</string>
+    <string name="todo">TODO</string>
+    <string name="rtodo">TODO</string>
 </resources>
